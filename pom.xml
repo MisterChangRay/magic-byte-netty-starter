@@ -6,13 +6,10 @@
 
 
     <groupId>com.github.misterchangray</groupId>
-    <artifactId>magic-byte-netty-starter-parent</artifactId>
+    <artifactId>magic-byte-netty-starter</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0</version>
-    <modules>
-        <module>magic-byte-netty-common</module>
-        <module>magic-byte-netty-starter</module>
-    </modules>
+
 
     <properties>
 
@@ -22,10 +19,38 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <artifactId>netty-all</artifactId>
+            <groupId>io.netty</groupId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <artifactId>spring-context</artifactId>
+            <groupId>org.springframework</groupId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.misterchangray</groupId>
+            <artifactId>magic-byte</artifactId>
+        </dependency>
+    </dependencies>
 
     <dependencyManagement>
 
         <dependencies>
+
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-classic</artifactId>
+            </dependency>
+
+
             <dependency>
                 <groupId>io.github.misterchangray</groupId>
                 <artifactId>magic-byte</artifactId>

@@ -7,7 +7,7 @@ package com.github.ray.common.dto;
  *
  *
  */
-public class Equipment {
+public class DeviceRequest {
     private String snId;
     // 其他业务字段
     private String timestamp;

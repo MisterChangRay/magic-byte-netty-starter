@@ -1,8 +1,10 @@
-package com.github.ray.common.protocol;
+package com.github.ray.common.protocol.uplink;
 
 import com.github.misterchangray.core.annotation.MagicClass;
 import com.github.misterchangray.core.annotation.MagicField;
 import com.github.misterchangray.core.enums.TimestampFormatter;
+import com.github.ray.common.protocol.Head;
+import com.github.ray.common.protocol.UpLink;
 
 import java.util.Date;
 
@@ -12,7 +14,7 @@ import java.util.Date;
  * 把接受的数据原样返回
  */
 @MagicClass
-public class EchoCMD {
+public class EchoUpLinkCMD implements UpLink {
     // 报文头
     @MagicField(order = 1)
     private Head head;

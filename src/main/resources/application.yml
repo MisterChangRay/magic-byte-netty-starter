@@ -1,0 +1,5 @@
+
+
+server:
+  netty:
+    startProt: 7510
