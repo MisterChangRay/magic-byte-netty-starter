@@ -5,6 +5,7 @@ import com.github.misterchangray.core.annotation.MagicField;
 import com.github.misterchangray.core.enums.TimestampFormatter;
 import com.github.ray.common.protocol.Head;
 import com.github.ray.common.protocol.UpLink;
+import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
@@ -13,6 +14,7 @@ import java.util.Date;
  *
  * 把接受的数据原样返回
  */
+@Component
 @MagicClass
 public class EchoUpLinkCMD implements UpLink {
     // 报文头
@@ -59,4 +61,6 @@ public class EchoUpLinkCMD implements UpLink {
     public void setCheckCode(byte checkCode) {
         this.checkCode = checkCode;
     }
+
+
 }

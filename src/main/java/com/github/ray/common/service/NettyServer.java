@@ -23,7 +23,7 @@ public class NettyServer {
     private final static Logger logger = LoggerFactory.getLogger(NettyServer.class);
     @Autowired
     NettyChannelInitializer nettyChannelInitializer;
-    @Value("${server:netty:startProt:7510}")
+    @Value("${server.netty.startPort:7510}")
     private int startPort;
 
     public void start() {

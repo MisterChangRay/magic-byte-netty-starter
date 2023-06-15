@@ -2,4 +2,5 @@
 
 server:
   netty:
-    startProt: 7510
+    # netty启动起始端口, 总共开放10个端口
+    startPort: 7510

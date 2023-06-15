@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 /**
  * 硬件服务
  *
- *
+ * 
  */
 @Service
 public class EquipmentManagerService {
